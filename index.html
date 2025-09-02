@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Plumbing Services</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: url('C:\Users\joyvi\OneDrive\Pictures\custserv.png') no-repeat center center/cover;
+      height: 100vh;
+      color: #fff;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: linear-gradient(90deg, #005f73, #0a9396, #94d2bd);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 50px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+      z-index: 1000;
+    }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar img {
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 12px;
+      border: 2px solid white;
+    }
+
+    .navbar h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .navbar ul li {
+      margin-left: 25px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    /* Main Section */
+    .main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100vh;
+      padding: 0 8%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-text {
+      max-width: 50%;
+      animation: slideIn 1s ease-in-out;
+    }
+
+    .hero-text h2 {
+      font-size: 42px;
+      line-height: 1.3;
+      font-weight: 700;
+      color: #ffdd00;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+
+    .hero-text p {
+      margin-top: 15px;
+      font-size: 18px;
+      color: #f2f2f2;
+    }
+
+    /* Login Card */
+    .login-card {
+      background: #ffffff;
+      color: #333;
+      padding: 35px;
+      width: 330px;
+      border-radius: 15px;
+      box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+      animation: fadeUp 1.2s ease-in-out;
+    }
+
+    .login-card h3 {
+      margin-bottom: 20px;
+      color: #005f73;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .login-card input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .login-card input:focus {
+      border-color: #0a9396;
+      box-shadow: 0 0 8px #0a9396;
+      outline: none;
+    }
+
+    .login-card button {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(90deg, #0a9396, #005f73);
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .login-card button:hover {
+      background: linear-gradient(90deg, #005f73, #0a9396);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+
+    .login-card a {
+      display: block;
+      text-align: center;
+      margin-top: 12px;
+      color: #0a9396;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .login-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* Animations */
+    @keyframes fadeUp {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes slideIn {
+      from {opacity: 0; transform: translateX(-40px);}
+      to {opacity: 1; transform: translateX(0);}
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="logo-section">
+      <img src="C:\Users\joyvi\OneDrive\Pictures\custserv.png" alt="Plumbing Logo">
+      <h1>Plumbing Online</h1>
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </div>
+
+  <!-- Landing Section -->
+  <div class="main">
+    <div class="hero-text">
+      <h2>Reliable Plumbing Services<br> Anytime, Anywhere</h2>
+      <p>Book trusted plumbers online for your home and office. Fast, secure, and affordable services at your doorstep.</p>
+    </div>
+
+    <div class="login-card">
+      <h3>Member Login</h3>
+      <form>
+        <input type="text" placeholder="Enter Username" required>
+        <input type="password" placeholder="Enter Password" required>
+        <button type="submit">Login</button>
+        <a href="#">Forgot Password?</a>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
